@@ -1,0 +1,21 @@
+<div class="container mt-3">
+  <h2 class="p-3 mb-5 border-bottom border-secondary">Add new celebrietes</h2>
+  <div class="w-75 pl-3 border-left border-secondary">
+    <form action="/celebrities-add" method="POST">
+      <div class="mb-2">
+        <label for="name" class="mr-2 col-3 bg-warning text-right">Name</label>
+        <input type="text" name="name" class="col-8">
+      </div>
+      <div class="mb-2">
+        <label for="occupation" class="mr-2 col-3 bg-warning text-right">Occupation</label>
+        <input type="text" name="occupation" class="col-8">
+      </div>
+      <div class="mb-2">
+        <label for="catchPhrase" class="mr-2 col-3 bg-warning text-right">Catch Phrase</label>
+        <textarea type="text" name="catchPhrase" rows="10" class="col-8 align-top"></textarea>
+      </div>
+
+      <button type="submit" class="p-2 mt-3 mr-2 bg-warning  text-info float-right">Add</button>
+    </form>
+  </div>
+</div>

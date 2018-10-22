@@ -1,0 +1,11 @@
+<div class="container mt-3 mb-5">
+  <h2 class="p-3 mb-5 border-bottom border-secondary">List of films</h2>
+  <div class="pl-3 border-left border-secondary">
+    {{#each movies}}
+    <h5 class="p-2 mr-2">
+      <a href="/movies/{{this._id}}" class="p-1 mr-2 text-muted bg-warning">+ {{this.title}} </a>
+      <small> {{genre}} </small>
+    </h5>
+    {{/each}}
+  </div>
+</div>

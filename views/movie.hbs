@@ -1,0 +1,22 @@
+<div class="container mt-3">
+  <h2 class="p-3 mb-5 border-bottom border-secondary"> {{title}} </h2>
+  <div class="pl-3 border-left border-secondary">
+    <ul>
+      <li class="mb-2"><strong class="bg-warning mr-2">Genre: </strong> {{genre}} </li>
+      <li class="mb-2"><strong class="bg-warning mr-2">Plot: </strong> {{plot}} </li>
+      <li>
+        {{#if _star}}
+        {{#each _star}}
+        <a href="/celebrities/{{this._id}}" class="bg-warning mb-1 mr-2"> {{this.name}} </a>
+        {{/each}}
+        {{else}}
+        No stars in this movie.
+        {{/if}}
+      </li>
+    </ul>
+    <div class="mt-5">
+      <a href="/movies/{{id}}/edit" class="p-2 mr-2 bg-warning  text-info">Edit</a>
+      <a href="/movies/{{id}}/delete" class="p-2 mr-2 bg-warning  text-danger">Delete</a>
+    </div>
+  </div>
+</div>

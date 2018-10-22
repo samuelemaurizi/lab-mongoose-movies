@@ -1,0 +1,20 @@
+<div class="container mt-3">
+  <h2 class="p-3 mb-5 border-bottom border-secondary">Edit <span class="bg-warning pl-1 pr-1"> {{name}} </span></h2>
+  <div class="w-75 pl-3 border-left border-secondary">
+    <form action="/celebrities/{{id}}/update " method="post">
+      <div class="mb-2">
+        <label for="name" class="mr-2 col-3 bg-warning text-right">Name</label>
+        <input type="text" name="name" id="name" value=" {{name}} " class="col-8">
+      </div>
+      <div class="mb-2">
+        <label for="occupation" class="mr-2 col-3 bg-warning text-right">Occupation</label>
+        <input type="text" name="occupation" id="occupation" value="{{occupation}}" class="col-8">
+      </div>
+      <div class="mb-2">
+        <label for="catchPhrase" class="mr-2 col-3 bg-warning text-right">Catch phrase</label>
+        <textarea name="catchPhrase" id="catchPhrase" rows="10" class="col-8 align-top">{{catchPhrase}}</textarea>
+      </div>
+      <button type="submit" class="p-2 mt-3 mr-2 bg-warning  text-info float-right">Update</button>
+    </form>
+  </div>
+</div>

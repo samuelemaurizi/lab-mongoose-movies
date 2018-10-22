@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <h2 class="p-3 mb-5 border-bottom border-secondary"> {{name}} </h2>
+  <div class="pl-3 border-left border-secondary">
+    <p><strong class="bg-warning mr-2">Occupation: </strong> {{occupation}} </p>
+    <p><strong class="bg-warning mr-2">Catch Phrase: </strong> {{catchPhrase}} </p>
+    <div class="mt-5">
+      <a href="/celebrities/{{id}}/update" class="p-2 mr-2 bg-warning  text-info">Edit</a>
+      <a href="/celebrities/{{id}}/delete" class="p-2 mr-2 bg-warning  text-danger">Delete</a>
+    </div>
+  </div>
+</div>
+{{!-- <form action="/celebrities/{{id}}/delete" method="get">
+  <button href="/celebrities" type="submit" class="btn btn-danger">Delete</button>
+</form> --}}

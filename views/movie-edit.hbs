@@ -1,0 +1,20 @@
+<div class="container mt-3">
+  <h2 class="p-3 mb-5 border-bottom border-secondary">Edit <span class="bg-warning pl-1 pr-1"> {{title}} </span></h2>
+  <div class="w-75 pl-3 border-left border-secondary">
+    <form action="/movies/{{id}}/edit" method="post">
+      <div class="mb-2">
+        <label for="title" class="mr-2 col-3 bg-warning text-right">Title</label>
+        <input type="text" name="title" id="title" value=" {{title}} " class="col-8">
+      </div>
+      <div class="mb-2">
+        <label for="genre" class="mr-2 col-3 bg-warning text-right">Genre</label>
+        <input type="text" name="genre" id="genre" value=" {{genre}} " class="col-8">
+      </div>
+      <div class="mb-2">
+        <label for="plot" class="mr-2 col-3 bg-warning text-right">Plot</label>
+        <textarea name="plot" id="plot" rows="10" class="col-8 align-top"> {{plot}} </textarea>
+      </div>
+      <button type="submit" class="p-2 mt-3 mr-2 bg-warning  text-info float-right">Update</button>
+    </form>
+  </div>
+</div>
